@@ -1,24 +1,4 @@
-<?php 
 
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") 
-{ 
-    if ((!isset($_POST['producto'])) || 
-        (!isset($_POST['cantidad'])) ||  
-        (!isset($_POST['valor'])) || 
-        (!isset($_POST['modelo'])))
-    { 
-        $error = "*" . "Todos los campos son requeridos"; 
-    } 
-    else
-    { 
-        $producto = $_POST['producto']; 
-        $cantidad = $_POST['cantidad']; 
-        $valor = $_POST['valor']; 
-        $modelo = $_POST['modelo'];
-    }
-}; 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     <title>Productos</title>
 </head>
 <body>
+    <?php 
+    include "./procesamiento.php";
+    ?>
      <table>
      <thead> 
      <tr> 
