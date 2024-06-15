@@ -3,12 +3,49 @@
     padding: 0;
     box-sizing: content-box;
 }
-
-table {
-    width: 100%;
-    margin: auto;
+body {
+    background-color: #a9f0a4;
 }
-tbody, thead {
+.form-for-products {
     width: 100%;
-    margin: auto;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 2rem auto;
+    align-items: center;
+    flex-direction: column;
+}
+.form-for-products input {
+    padding: 4px 6px;
+    margin: 8px auto;
+}
+.form-for-products label {
+    font-size: 1.23rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+}
+.form-for-products button {
+    color: #fff;
+    font-weight: 600;
+    padding: 6px;
+    background-color: #608c7d;
+}
+a {
+    text-decoration: none;
+    background-color: #608c7d;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 8px;
+    padding: 4px 6px;
+    display: flex;
+    width: max-content;
+}
+.table-of-products {
+    width: 100%;
+    height: 100vh;
+    margin: 2rem auto;
+}
+table td {
+    padding: 15px;
 }

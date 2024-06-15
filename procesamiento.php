@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 }; 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,25 +28,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     <title>Productos</title>
 </head>
 <body>
-     <table>
-     <thead> 
-     <tr> 
+     <table class="table-of-products">
+     <thead class="table-heading"> 
+     <tr class="row-of-headers"> 
      <th> Nombre </th>
      <th> Cantidad </th>
      <th> Valor </th>
      <th> Modelo </th>
      </tr>
      </thead>
-     <tbody> 
-     <tr> 
+     <tbody class="table-body"> 
+     <tr class="row-of-body"> 
      <td> <?= $producto ?> </td>
- 
      <td><?= $cantidad ?> </td>
- 
      <td><?=  $valor ?></td>
- 
      <td><?=  $modelo ?></td>
+     <td class="eliminar-producto"><a href="">Eliminar un producto</a></td>
+     <td class="actualizar-producto"><a href="">Actualizar un producto</a></td>
      </tr>
+     <a class="agregar-producto" href="./formulario.php">Ingresar un producto nuevo</a>
      </tbody>
      </table>
     
