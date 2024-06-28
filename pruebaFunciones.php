@@ -75,21 +75,22 @@ function calcPromedio($inventario) {
 $arrOfProducts = [];
 
 // Agregar Productos
-array_push($arrOfProducts, agregarProducto('BJX', 8, 876, 'Bicicleta'), agregarProducto('Saveiro', 5, 630, 'Volkswagen'), agregarProducto('K300', 5, 3200, 'Lamborghini'));
+// array_push($arrOfProducts, agregarProducto('BJX', 8, 876, 'Bicicleta'), agregarProducto('Saveiro', 5, 630, 'Volkswagen'), agregarProducto('K300', 5, 3200, 'Lamborghini'));
 // Buscar por modelos
-print_r(buscarProdPorModelo('BNW',$productos));
+// var_dump($arrOfProducts);
+// print_r(buscarProdPorModelo('BNW',$productos));
 
 //Actualizar producto
-print_r(actualizarProducto($arrOfProducts, 2, 'Camaro', 6, 930, 'Chevrolet'));
+// print_r(actualizarProducto($arrOfProducts, 2, 'Camaro', 6, 930, 'Chevrolet'));
 // Calcular el valor total de los productos
-print_r(valorTotal($arrOfProducts, 'valor'));
+// print_r(valorTotal($arrOfProducts, 'valor'));
 // Filtrar productos por productos mayores a un valor
-print_r(filtrarValores($arrOfProducts, 3000));
+// print_r(filtrarValores($arrOfProducts, 3000));
 // Mostrar todos los productos
-print_r(mostrarProds($arrOfProducts));
+// print_r(mostrarProds($arrOfProducts));
 // Mostrar todos los modelos disponibles
-print_r(mostrarModsDisponibles($arrOfProducts));
+// print_r(mostrarModsDisponibles($arrOfProducts));
 //Calcular el promedio de todos los valores de los productos 
-print_r(calcPromedio($arrOfProducts));
+// print_r(calcPromedio($arrOfProducts));
 
 ?>

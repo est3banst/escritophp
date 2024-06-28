@@ -43,11 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
      <td><?= $cantidad ?> </td>
      <td><?=  $valor ?></td>
      <td><?=  $modelo ?></td>
-     <td class="eliminar-producto"><a href="">Eliminar un producto</a></td>
-     <td class="actualizar-producto"><a href="">Actualizar un producto</a></td>
      </tr>
      <a class="agregar-producto" href="./formulario.php">Ingresar un producto nuevo</a>
      </tbody>
+     <a href="">Eliminar un producto</a>
+     <a href="">Actualizar un producto</a>
      </table>
     
 </body>
